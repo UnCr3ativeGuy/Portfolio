@@ -4,39 +4,44 @@ import {
   ux,
   prototyping,
   javascript,
-  typescript,
+  php,
   html,
   css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  git,
-  figma,
+  java,
+  kotlin,
+  python,
+  sql,
+  vue,
+  bootstrap,
+  spring,
   docker,
-  postgresql,
-  rubyrails,
-  graphql,
-  komikult,
-  leaderboard,
-  math,
-  movie,
-  nyeusi,
-  space,
+  git,
+  jetbrains,
+  figma,
+  canva,
+  vakna,
   coverhunt,
   dcc,
   kelhel,
-  microverse,
+  microverse
 } from '../assets';
 
 export const navLinks = [
   {
-    id: 'about',
-    title: 'About',
+    id: 'competences',
+    title: 'Compétences',
+  },
+  {
+    id: 'techs',
+    title: 'Technologies',
   },
   {
     id: 'projects',
-    title: 'Projects',
+    title: 'Projets',
+  },
+  {
+    id: 'parcours',
+    title: 'Mon Parcours',
   },
   {
     id: 'contact',
@@ -77,195 +82,212 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: 'TypeScript',
-    icon: typescript,
+    name: 'PHP',
+    icon: php,
   },
   {
-    name: 'React JS',
-    icon: reactjs,
+    name: 'Java',
+    icon: java,
   },
   {
-    name: 'Redux Toolkit',
-    icon: redux,
+    name: 'Kotlin',
+    icon: kotlin,
   },
   {
-    name: 'Tailwind CSS',
-    icon: tailwind,
+    name: 'Python',
+    icon: python,
   },
   {
-    name: 'Node JS',
-    icon: nodejs,
+    name: 'SQL',
+    icon: sql,
+  }
+];
+
+const tools = [
+  {
+    name: 'VueJS',
+    icon: vue,
   },
   {
-    name: 'Rails',
-    icon: rubyrails,
+    name: 'BootStrap',
+    icon: bootstrap,
   },
   {
-    name: 'graphql',
-    icon: graphql,
+    name: 'Spring Boot',
+    icon: spring,
   },
   {
-    name: 'postgresql',
-    icon: postgresql,
+    name: 'Docker',
+    icon: docker,
   },
   {
-    name: 'git',
+    name: 'Git',
     icon: git,
   },
   {
-    name: 'figma',
+    name: 'JetBrains',
+    icon: jetbrains,
+  },
+  {
+    name: 'Figma',
     icon: figma,
   },
   {
-    name: 'docker',
-    icon: docker,
-  },
-];
+    name: 'Canva',
+    icon: canva,
+  }
+]
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
+    title: 'BAC STI2D',
+    company_name: 'Lycee Jean Baylet',
     icon: coverhunt,
     iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
+    date: '2021 - 2022',
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
-    icon: microverse,
+    title: 'BUT Informatique',
+    company_name: 'Universite Paul Sabatier',
+    icon: coverhunt,
     iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: " 2022 - Aujourd'hui",
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
-    icon: kelhel,
+    title: 'Stage 2eme année BUT',
+    company_name: 'Boucherie Charcuterie Belloc',
+    icon: coverhunt,
     iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
-  },
-  {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
-    icon: dcc,
-    iconBg: '#333333',
-    date: 'Sep 2022 - Present',
-  },
+    date: 'Avril 2024 - Juin 2024',
+  }
 ];
 
 const projects = [
   {
-    id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    id: 0,
+    name: 'Vakna',
+    description: 'Une application mobile android en Kotlin qui a pour but de motiver les utilisateurs dans leurs projets personnels',
     tags: [
       {
-        name: 'react',
-        color: 'blue-text-gradient',
+        name: 'Kotlin'
       },
       {
-        name: 'mongodb',
-        color: 'green-text-gradient',
+        name: 'Structure MVC'
       },
       {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
+        name: 'Scrum'
+      },
+      {
+        name: 'Android Studio'
       },
     ],
-    image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    image: vakna
   },
   {
-    id: 'project-2',
-    name: 'Leaderboard',
-    description:
-      'A leaderboard list app that displays scores submitted by different players.',
+    id: 1,
+    name: 'Site web vitrine',
+    description: "Un site web fait en stage chez BOUCHERIE CHARCUTERIE BELLOC qui a pour but de présenter les produits de l'entreprise",
     tags: [
       {
-        name: 'react',
-        color: 'blue-text-gradient',
+        name: 'HTML'
       },
       {
-        name: 'restapi',
-        color: 'green-text-gradient',
+        name: 'Bootstrap'
       },
       {
-        name: 'scss',
-        color: 'pink-text-gradient',
+        name: 'Vue.js'
+      },
+      {
+        name: 'Php'
+      },
+      {
+        name: 'Python Flask'
+      },
+      {
+        name: 'Figma'
       },
     ],
-    image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    image: null,
+    link: null
   },
   {
-    id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
+    id: 2,
+    name: 'E-Sporter',
+    description: 'Une application de gestion de match E-Sport en Java',
     tags: [
       {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
+        name: 'Java'
       },
       {
-        name: 'supabase',
-        color: 'green-text-gradient',
+        name: 'Java Swing'
       },
       {
-        name: 'css',
-        color: 'pink-text-gradient',
+        name: 'JDBC Derby'
+      },
+      {
+        name: 'Structure MVC'
       },
     ],
-    image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
-  },
-  {
-    id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
-  },
-  {
-    id: 'project-5',
-    name: 'Nyeusi Fest Site',
-    description:
-      'This is a demo concert website for a music festival called Nyeusi.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
-  },
+    image: null,
+    link: "https://gitlab.info.iut-tlse3.fr/quipe-1-sae-s3/sae"
+  }
 ];
 
-export { services, technologies, experiences, projects };
+const competences = [
+  {
+    name: 'Réaliser',
+    description: 'Adapter des applications sur un ensemble de supports',
+    projets: [
+        0,
+        1,
+        2,
+    ],
+    color: "bg-red-700"
+  },
+  {
+    name: 'Optimiser',
+    description: 'Analyser et optimiser des applications',
+    projets: [
+      0,
+      1,
+      2,
+    ],
+    color: "bg-orange-400"
+  },
+  {
+    name: 'Administrer',
+    description: 'Déployer des services dans une architecture réseau',
+    projets: [
+      1
+    ],
+    color: "bg-yellow-500"
+  },
+  {
+    name: 'Gérer',
+    description: 'Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité',
+    projets: [
+      1,
+      2,
+    ],
+    color: "bg-green-500"
+  },
+  {
+    name: 'Conduire',
+    description: 'Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs',
+    projets: [
+      0,
+      1
+    ],
+    color: "bg-blue-950"
+  },
+  {
+    name: 'Collaborer',
+    description: 'Manager une équipe informatique',
+    projets: [
+      2,
+    ],
+    color: "bg-black"
+  },
+]
+
+export { services, technologies, tools, experiences, projects, competences };

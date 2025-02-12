@@ -7,8 +7,9 @@ import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
 import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
-import { download, downloadHover, resume } from '../assets';
+import { download, resume } from '../assets';
 import { textVariant } from '../utils/motion';
+import { cv } from '../assets/index.js'
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
@@ -55,11 +56,8 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} sm:pl-16 pl-[2rem]`}>
-          What I've done so far
-        </p>
         <h2 className={`${styles.sectionHeadText} sm:pl-16 pl-[2rem]`}>
-          Work Experience.
+          Mon parcours
         </h2>
       </motion.div>
 
@@ -91,6 +89,7 @@ const Experience = () => {
                 />
               </div>
             }>
+              <a href={cv} target="_blank" rel="noopener noreferrer">
             <button
               className="live-demo flex justify-between 
               sm:text-[18px] text-[14px] text-timberWolf 
@@ -100,22 +99,7 @@ const Experience = () => {
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
               hover:text-eerieBlack transition duration-[0.2s] 
               ease-in-out"
-              onClick={() =>
-                window.open(
-                  'resume link', //paste the link to your resume here
-                  '_blank'
-                )
-              }
-              onMouseOver={() => {
-                document
-                  .querySelector('.download-btn')
-                  .setAttribute('src', downloadHover);
-              }}
-              onMouseOut={() => {
-                document
-                  .querySelector('.download-btn')
-                  .setAttribute('src', download);
-              }}>
+              >
               MY RESUME
               <img
                 src={download}
@@ -124,6 +108,7 @@ const Experience = () => {
                 w-[23px] h-[23px] object-contain"
               />
             </button>
+              </a>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
@@ -131,4 +116,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, 'work');
+export default SectionWrapper(Experience, 'parcours');

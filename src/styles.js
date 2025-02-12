@@ -18,7 +18,7 @@ const styles = {
   padding: 'sm:px-16 px-6 sm:py-16 py-10',
 
   heroHeadText:
-    'font-black text-eerieBlack lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[90px] mt-2',
+    'font-black text-eerieBlack lg:text-[60px] sm:text-[40px] xs:text-[30px] text-[30px] lg:leading-[70px] mt-2',
   heroSubText:
     'text-eerieBlack font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]',
 
@@ -30,6 +30,8 @@ const styles = {
     'sm:text-[18px] text-[16px] text-taupe uppercase tracking-wider font-semibold font-poppins',
   sectionSubTextLight:
     'sm:text-[18px] text-[16px] text-taupe uppercase tracking-wider font-semibold font-poppins',
+  competenceHeadText:
+      'text-eerieBlack font-black md:text-[20px] sm:text-[16px] xs:text-[12px] text-[10px] font-poppins',
 };
 
 export { styles };
